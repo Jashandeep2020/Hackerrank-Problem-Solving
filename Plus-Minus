@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int i,n,neg=0,pos=0,zer=0;
+    cin>>n;
+    int a[n];
+    for(i=0;i<n;i++)
+    cin>>a[i];
+    for(i=0;i<n;i++){
+        if(a[i]<0)
+        neg++;
+        else if(a[i]>0)
+        pos++;
+        else
+        zer++;
+    }
+    cout<<(float)pos/n<<endl;
+    cout<<(float)neg/n<<endl;
+    cout<<(float)zer/n;
+}
