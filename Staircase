@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int main(){
+    int n,i,c;
+    cin>>n;
+    c=n;
+    int a[n];
+    while(n){
+        for(i=0;i<n-1;i++)
+        cout<<" ";
+        for(i=c;i>=n;i--)
+        cout<<"#";
+        if(i==n)
+        break;
+        n--;
+        cout<<endl;
+    }
+}
