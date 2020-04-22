@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+    int n,i,j,d,m,count=0,s=0;
+    cin>>n;
+    int a[n];
+    for(i=0;i<n;i++)
+    cin>>a[i];
+    cin>>d>>m;
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            s+=a[j+i];
+        }
+        if(s==d)
+        count++;
+        s=0;
+    }
+    cout<<count;
+    return 0;
+}
